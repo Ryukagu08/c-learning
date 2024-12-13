@@ -2,40 +2,44 @@
 #include <cstdlib>
 #include <ctime>
 
-void randomCheck(int randomNum, int lives) {
-    int guess;
-    while (lives > 0) {
-        std::cin >> guess;
-        
-        if (std::cin.fail()) {
-            std::cin.clear();
-            std::cin.ignore(10000, '\n');
-            std::cout << "Invalid input, please enter a number between 0 and 10." << std::endl;
-            continue;
-        }
+void infoInput(std::string name, std::string firstName, std::string lastName, std::string email, std::string welcomeChoice) {
+    std::cout << "First Name: ";
+    std::cin >> firstName;
+    std::cout << "Last Name: ";
+    std::cin >> lastName;
+    name = firstName + " " + lastName;
+    std::cout << "Email: ";
+    std::cin >> email;
 
-        if (guess == randomNum) {
-            std::cout << "Congrats! You guessed the number: " << randomNum << std::endl;
-            break;
-        } else if (guess >= 0 && guess <= 10) {
-            lives--;
-            if (lives > 0) {
-                std::cout << "Wrong Answer! " << lives << " lives left" << std::endl;
-            } else {
-                std::cout << "Out of lives, game over! The correct number was " << randomNum << "." << std::endl;
-            }
-        } else {
-            std::cout << "Invalid input, please enter a number between 0 and 10." << std::endl;
-        }
-    }
+    std::cout << "Welcome! " + name + "." << std::endl;
 }
 
-int main() {
-    srand(time(0));
-    int randomNum = rand() % 11; // Random number (0 to 10)
-    // std::cout << "Random number: " << randomNum << std::endl;
+void welcomeCheck(std::string welcomeChoice, std::string name, std::string firstName, std::string lastName, std::string email) {
+    while (true) {
+        if (welcomeChoice == "1" || welcomeChoice == "Sign In")  {
+            std::cout << "Please enter your information:" << std::endl;
+            infoInput(name, firstName, lastName, email, welcomeChoice);
+            break;
+        } else if (welcomeChoice == "2" || welcomeChoice == "Exit") {
+            std::cout << "Have a nice day!" << std::endl;
+            break;
+        } else {
+            std::cout << "Invalid Input" << std::endl;
+            std::cout << "Please enter a valid option (1/Sign In or 2/Exit): " << std::endl;
+            std::cin >> welcomeChoice;
+        }
+    }
+} 
 
-    int lives = 5;
-    std::cout << "Guess a number between 0 and 10. You have " << lives << " lives left." << std::endl;
-    randomCheck(randomNum, lives);
+
+int main() {
+    std::string name;
+    std::string firstName;
+    std::string lastName;
+    std::string email;
+    std::string welcomeChoice;
+    std::cout << "Welcome!" << std::endl << "1: Sign In" << std::endl << "2: Exit" << std::endl;
+    std::cin >> welcomeChoice;
+
+    welcomeCheck(welcomeChoice, name, firstName, lastName, email);
 }
