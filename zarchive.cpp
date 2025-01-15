@@ -22,6 +22,12 @@
 //   std::cout << age;
 // }
 
+
+
+//________________________________________________________________________________________________________________________
+
+
+
 // int main() {
 //   // int age = 28;
 
@@ -38,6 +44,12 @@
 //   // std::cout << nAge << std::endl;
 // }
 
+
+
+//________________________________________________________________________________________________________________________
+
+
+
 // int main() {
 //   double price = 19.99;
 //   std::cout << price << std::endl;
@@ -48,6 +60,12 @@
 //   balance = -5.95;
 //   std::cout << balance << srd::endl;
 // }
+
+
+
+//________________________________________________________________________________________________________________________
+
+
 
 // int main() {
 //   char a = 'a';
@@ -60,6 +78,12 @@
 //   std::cout << numOne << std::endl;
 // }
 
+
+
+//________________________________________________________________________________________________________________________
+
+
+
 // int main() {
 //   char chCapR = 'R';
 //   char chO = 'o';
@@ -71,6 +95,12 @@
 //   std::cout << chCapR << chO << chB << chE << chR << chT << chO << std::endl;
 // }
 
+
+
+//________________________________________________________________________________________________________________________
+
+
+
 // int main() {
 //   std::string hola = "Hello";
 //   std::string mundo = "World";
@@ -78,6 +108,12 @@
 //   char exclamation = '!';
 //   std::cout << hola << space << mundo << exclamation << std::endl;
 // }
+
+
+
+//________________________________________________________________________________________________________________________
+
+
 
 // int main() {
 //   std::string name = "Roberto";
@@ -92,6 +128,12 @@
 //     std::cout << isMyName << std::endl;
 //   }
 // }
+
+
+
+//________________________________________________________________________________________________________________________
+
+
 
 // int main() {
 //   const char cpR = 'R';
@@ -110,6 +152,12 @@
 //   }
 
 // }
+
+
+
+//________________________________________________________________________________________________________________________
+
+
 
 // int main() {
 //   std::cout << "Type your name" << std::endl;
@@ -131,6 +179,12 @@
 //   }
 // }
 
+
+
+//________________________________________________________________________________________________________________________
+
+
+
 // int main() {
 //   std::string username;
 //   std::cout << "Enter your name: " << std::endl;
@@ -151,6 +205,12 @@
 //     std::cout << "Invalid option" << std::endl << "Options; " << "1. Email " << "2. Name" << std::endl;
 //   }
 // }
+
+
+
+//________________________________________________________________________________________________________________________
+
+
 
 // int main() {
 //   std::string name1;
@@ -182,6 +242,12 @@
 //   }
 // }
 
+
+
+//________________________________________________________________________________________________________________________
+
+
+
 // int main() {
 //   int age = 16;
 //   const int increment = 1;
@@ -190,6 +256,12 @@
 //   int modulusAge = (age - increment) % 7;
 //   std::cout << modulusAge << std::endl;
 // }
+
+
+
+//________________________________________________________________________________________________________________________
+
+
 
 // int main() {
 //   int userInput;
@@ -201,6 +273,12 @@
 //     std::cout << "No, " << userInput << " is not divisible by five." << std::endl;
 //   }
 // }
+
+
+
+//________________________________________________________________________________________________________________________
+
+
 
 // #include <iostream>
 // #include <limits>
@@ -252,6 +330,11 @@
 // }
 
 
+
+//________________________________________________________________________________________________________________________
+
+
+
 // int main() {
 //   std::cout << "Type your name and surname:" << std::endl;
 //   std::string name;
@@ -269,6 +352,12 @@
 //   }
 // }
 
+
+
+//________________________________________________________________________________________________________________________
+
+
+
 // int main() {
 //   std::cout << "Type your name." << std::endl;
 //   std::string name;
@@ -280,6 +369,9 @@
 //   std::cout << "Welcome!" << name << std::endl;
 // }
 
+
+
+//________________________________________________________________________________________________________________________
 
 
 
@@ -326,6 +418,10 @@
 
 
 
+//________________________________________________________________________________________________________________________
+
+
+
 // void fullNameFunc(std::string fullName, std::string name, std::string surname, std::string displayChoice) {
 //   if (displayChoice == "1" || displayChoice == "name") {
 //     fullName = name + " " + surname;
@@ -359,6 +455,10 @@
 //   std::cin >> displayChoice;
 //   fullNameFunc(fullName, name, surname, displayChoice);
 // }
+
+
+
+//________________________________________________________________________________________________________________________
 
 
 // #include <iostream>
@@ -460,6 +560,10 @@
 
 
 
+//________________________________________________________________________________________________________________________
+
+
+
 // int main() {
 //   int ageInput;
 //   int usernameInput;
@@ -476,6 +580,10 @@
 //     std::cout << "Sorry, you are not old enough to sign in." << std::endl;
 //   }
 // }
+
+
+
+//________________________________________________________________________________________________________________________
 
 
 
@@ -526,6 +634,9 @@
 
 
 
+//________________________________________________________________________________________________________________________
+
+
 // #include <iostream>
 // #include <cstdlib>
 // #include <ctime>
@@ -570,10 +681,7 @@
 
 
 
-
-
-
-
+//________________________________________________________________________________________________________________________
 
 
 
@@ -691,38 +799,171 @@
 
 
 
+//________________________________________________________________________________________________________________________
 
 
 
-
-
-    // bool isDoorLocked = true;
-    // bool isDoorOpen = false;
-    // std::string ownKey;
-    // if (!isDoorOpen) {
-    //     if (isDoorLocked) {
-    //             while (isDoorLocked) {
-    //         std::cout << "The door is closed and locked." << std::endl << "Do you have the key?" << std::endl;
-    //         std::cout << "Yes" << std::endl << "No" << std::endl;
-    //         std::cin >> ownKey;
-    //             if (ownKey == "Yes") {
-    //                 std::cout << "Door Unlocked" << std::endl;
-    //                 break;
-    //             } else if (ownKey == "No") {
-    //                 std::cout << "Can't open the door." << std::endl;
-    //                 break;
-    //             } else {
-    //                 std::cout << "Invalid Option" << std::endl;
-    //             }
-    //         }
-    //     } else if (!isDoorLocked) {
-    //         std::cout << "The door is unlocked." << std::endl;
-    //     }
+// bool isDoorLocked = true;
+// bool isDoorOpen = false;
+// std::string ownKey;
+// if (!isDoorOpen) {
+//     if (isDoorLocked) {
+//             while (isDoorLocked) {
+//         std::cout << "The door is closed and locked." << std::endl << "Do you have the key?" << std::endl;
+//         std::cout << "Yes" << std::endl << "No" << std::endl;
+//         std::cin >> ownKey;
+//             if (ownKey == "Yes") {
+//                 std::cout << "Door Unlocked" << std::endl;
+//                 break;
+//             } else if (ownKey == "No") {
+//                 std::cout << "Can't open the door." << std::endl;
+//                 break;
+//             } else {
+//                 std::cout << "Invalid Option" << std::endl;
+//             }
+//         }
+//     } else if (!isDoorLocked) {
+//         std::cout << "The door is unlocked." << std::endl;
+//     }
         
-    // } else if (isDoorOpen) {
-    //     std::cout << "The door is already open." << std::endl;
-    // }
+// } else if (isDoorOpen) {
+//     std::cout << "The door is already open." << std::endl;
+// }
 
+
+
+//________________________________________________________________________________________________________________________
+
+
+
+// #include <iostream>
+// #include <functional>
+// #include <string>
+// #include <vector>
+// #include <algorithm>
+// #include <unordered_set>
+// #include <random>
+
+// void spanishVer() {
+//     std::cout << "Ordena!" << std::endl;
+//     std::vector<std::string> words = {"suelo", "cabeza", "dientes", "nevera", "torre", "zapato", "pizarra"};
+    
+//     std::random_device rd;
+//     std::mt19937 g(rd());
+    
+//     int randomIndex = g() % words.size();
+//     std::string selectedWord = words[randomIndex];
+    
+//     std::shuffle(selectedWord.begin(), selectedWord.end(), g);
+    
+//     std::cout << "Reordena esta palabra: " << selectedWord << std::endl;
+
+//     std::string guess;
+//     std::cin >> guess;
+
+//     if (guess == words[randomIndex]) {
+//         std::cout << "Felicidades! Has ordenado la palabra correctamente." << std::endl;
+//     } else {
+//         std::cout << "Incorrecto! La palabra era " + words[randomIndex] << std::endl;
+//     }
+// }
+
+// void englishVer() {
+//     std::cout << "Unscramble!" << std::endl;
+//     std::vector<std::string> words = {"floor", "head", "teeth", "fridge", "tower", "shoe", "board"};
+    
+//     std::random_device rd;
+//     std::mt19937 g(rd());
+    
+//     int randomIndex = g() % words.size();
+//     std::string selectedWord = words[randomIndex];
+    
+//     std::shuffle(selectedWord.begin(), selectedWord.end(), g);
+    
+//     std::cout << "Unscramble this word: " << selectedWord << std::endl;
+
+//     std::string guess;
+//     std::cin >> guess;
+
+//     if (guess == words[randomIndex]) {
+//         std::cout << "Congrats! You unscrambled the word." << std::endl;
+//     } else {
+//         std::cout << "Incorrect! The word was " + words[randomIndex] << std::endl;
+//     }
+// }
+
+// int main() {
+//     std::cout << "Please choose a language: " << std::endl << "1 - English" << std::endl << "2 - Español" << std::endl;
+//     std::string languageChoice;
+//     std::cin >> languageChoice;
+    
+//     if (languageChoice == "1" || languageChoice == "English") {
+//         englishVer();
+//     } else if (languageChoice == "2" || languageChoice == "Español") {
+//         spanishVer();
+//     }
+// }
+
+
+
+//________________________________________________________________________________________________________________________
+
+
+
+// void codeCheck(int code, int &codeInput, bool &isRight, std::string &message) {
+//     std::cin >> codeInput;
+//     if (codeInput == code) {isRight = true;}
+//     message = isRight ? "Welcome in!" : "Unable to access";
+//     std::cout << message << std::endl;
+//     while (!isRight) {
+//         std::cout << "Try again:" << std::endl;
+//         codeCheck(code, codeInput, isRight, message);
+//     }
+// }
+
+// int main() {
+//     int code = 1234;
+//     int codeInput;
+//     bool isRight;
+//     std::string message;
+//     std::cout << "Type your PIN to access:" << std::endl;
+//     codeCheck(code, codeInput, isRight, message);
+// }
+
+
+
+//________________________________________________________________________________________________________________________
+
+
+
+// void setPIN(int &code) {
+//     std::cin >> code;
+//     while (code < 1000 || code > 9999) {std::cout << "Invalid input. Please enter a 4-digit number: "; std::cin >> code;}
+//     std::cout << "PIN set." << std::endl;
+// }
+
+// void codeCheck(int code, int &codeInput, bool &isRight, std::string &message) {
+//     std::cin >> codeInput;
+//     if (codeInput == code) {isRight = true;}
+//     message = isRight ? "Welcome in!" : "Unable to access";
+//     std::cout << message << std::endl;
+//     while (!isRight) {std::cout << "Try again:" << std::endl; codeCheck(code, codeInput, isRight, message);}
+// }
+
+// int main() {
+//     int code = 1234;
+//     int codeInput;
+//     bool isRight;
+//     std::string message;
+//     std::cout << "Welcome, please set a 4 digit PIN:";
+//     setPIN(code);
+//     std::cout << "Type your PIN to access:" << std::endl;
+//     codeCheck(code, codeInput, isRight, message);
+// }
+
+
+
+//________________________________________________________________________________________________________________________
 
 
 
